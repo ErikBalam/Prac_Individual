@@ -1,0 +1,234 @@
+/* Estilos Globales */
+body {
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    padding: 0; /* Elimina el relleno predeterminado del navegador */
+    font-family: Arial, Helvetica, sans-serif; /* Fuente para todo el sitio */
+    font-size: 14px; /* Tamaño de fuente base */
+    background-color: #202124; /* Fondo oscuro para todo el sitio */
+    display: flex; /* Flexbox para organizar contenido */
+    flex-direction: column; /* Ordena elementos de forma vertical */
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+}
+
+/* Estilos del Header */
+header {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 60px; /* Altura fija del encabezado */
+    background-color: #202124; /* Fondo oscuro del encabezado */
+}
+
+header nav {
+    display: flex; /* Flexbox para organizar los elementos del menú */
+    justify-content: flex-end; /* Alinea los elementos del menú a la derecha */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 100%; /* Alinea con la altura del encabezado */
+}
+
+header nav .nav-right-section {
+    width: 250px; /* Ancho del contenedor de la sección derecha del menú */
+    height: auto; /* Altura ajustable según contenido */
+    display: flex; /* Flexbox para organizar los elementos del menú */
+    list-style: none; /* Elimina los puntos de la lista */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+nav .nav-right-section a {
+    margin-right: 10px; /* Espaciado entre enlaces del menú */
+    color: #e8eaed; /* Color del texto de los enlaces */
+}
+
+a {
+    text-decoration: none; /* Elimina subrayado de enlaces */
+    cursor: pointer; /* Cambia el cursor a puntero al pasar sobre enlaces */
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url("https://static.thenounproject.com/png/756729-200.png"); /* Ícono del menú */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    background-position: center; /* Centrar la imagen de fondo */
+    background-size: contain; /* Ajustar imagen al contenedor */
+    width: 25px; /* Ancho del ícono del menú */
+    height: 25px; /* Altura del ícono del menú */
+}
+
+nav .nav-right-section .menu-icon {
+    filter: invert(1); /* Invierte los colores del ícono, útil para temas oscuros */
+}
+
+nav .nav-right-section img {
+    border-radius: 50%; /* Redondea las esquinas de la imagen para hacerla circular */
+    margin-left: 10px; /* Espacio a la izquierda de la imagen */
+}
+
+/* Estilos del Main */
+main {
+    margin-top: 150px; /* Espacio superior para separar el contenido del encabezado */
+    text-align: center; /* Centra el contenido textualmente */
+    flex: 1; /* Expande el contenido para ocupar espacio disponible */
+}
+
+main .main-logo {
+    width: 530px; /* Ancho del contenedor del logo */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    margin-bottom: 35px; /* Espacio inferior del contenedor */
+}
+
+main .main-logo img {
+    height: 92px; /* Altura del logo de Google */
+    width: 272px; /* Ancho del logo de Google */
+}
+
+main .main-input {
+    width: 530px; /* Ancho del contenedor del buscador */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    margin-bottom: 35px; /* Espacio inferior del contenedor */
+}
+
+main .main-input-container {
+    width: 525px; /* Ancho del contenedor del input */
+    border-radius: 100px; /* Bordes redondeados del contenedor */
+    border: 1px solid #5f6368; /* Borde gris alrededor del contenedor */
+    display: flex; /* Flexbox para organizar elementos en línea */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding: 5px; /* Espacio interno del contenedor */
+}
+
+main .main-input input {
+    width: 450px; /* Ancho del input del buscador */
+    height: 40px; /* Altura del input del buscador */
+    border: none; /* Sin borde */
+    outline: none; /* Elimina el contorno al enfocar */
+    font-size: 14px; /* Tamaño de fuente del input */
+    background-color: #303134; /* Fondo oscuro del input */
+    border-radius: 10px; /* Bordes redondeados del input */
+    text-align: center; /* Centra el texto en el input */
+}
+
+/* Estilos del ícono de búsqueda */
+main .search-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png'); /* Imagen del ícono de búsqueda */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position: center; /* Centrar la imagen */
+    background-size: contain; /* Ajustar imagen al contenedor */
+    width: 18px; /* Ancho del ícono */
+    height: 18px; /* Altura del ícono */
+    margin-right: 10px; /* Espacio a la derecha del ícono */
+    margin-left: 10px; /* Espacio a la izquierda del ícono */
+}
+
+/* Estilos del ícono de cámara */
+main .main-input .camera-icon {
+    display: inline-block; /* Muestra el ícono en línea */
+    margin-left: 10px; /* Espacio a la izquierda del ícono */
+    cursor: pointer; /* Cursor de mano al pasar sobre el ícono */
+    text-decoration: none; /* Sin subrayado */
+    color: #5f6368; /* Color gris del ícono */
+    margin-right: 10px; /* Espacio a la derecha del ícono */
+}
+
+/* Estilos del ícono de micrófono */
+main .main-input .micro-icon {
+    display: inline-block; /* Muestra el ícono en línea */
+    cursor: pointer; /* Cursor de mano al pasar sobre el ícono */
+    text-decoration: none; /* Sin subrayado */
+    color: #5f6368; /* Color gris del ícono */
+    margin-right: 10px; /* Espacio a la derecha del ícono */
+}
+
+/* Ajuste de tamaño de los íconos */
+.micro-icon svg,
+.camera-icon svg {
+    width: 24px; /* Ancho del ícono SVG */
+    height: 24px; /* Altura del ícono SVG */
+    fill: #5f6368; /* Color de relleno del ícono */
+    cursor: pointer; /* Cursor de mano al pasar sobre el ícono */
+    transition: fill 0.3s ease; /* Transición suave del color */
+}
+
+/* Cambia el color de los íconos al pasar el mouse */
+.micro-icon svg:hover,
+.camera-icon svg:hover {
+    fill: #ffffff; /* Color blanco al pasar el cursor */
+}
+
+/* Estilos de los botones */
+main .main-buttons {
+    width: 530px; /* Ancho del contenedor de los botones */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+}
+
+main .main-buttons div {
+    display: inline-block; /* Muestra los botones en línea */
+}
+
+/* Ajustes de estilo para los botones */
+main .main-buttons button {
+    height: 36px; /* Altura del botón */
+    background-color: #303134; /* Fondo oscuro inicial del botón */
+    border: 1px solid transparent; /* Borde transparente */
+    font-size: 14px; /* Tamaño de fuente del botón */
+    color: white; /* Texto blanco */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    padding: 0 15px; /* Espaciado interno del botón */
+    margin-right: 15px; /* Espacio a la derecha del botón */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease; /* Animación suave al interactuar */
+}
+
+/* Efecto hover para los botones */
+main .main-buttons button:hover {
+    background-color: white; /* Fondo blanco al pasar el cursor */
+    color: black; /* Texto negro para contraste */
+    border: 1px solid white; /* Borde blanco para resaltar */
+}
+
+/* Estilo del enlace dentro del botón */
+main .button-link a {
+    color: white; /* Texto inicial blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilos del Footer */
+footer {
+    background-color: #171717; /* Fondo oscuro del pie de página */
+    color: white; /* Texto blanco */
+    padding: 15px 20px; /* Espaciado interno del pie de página */
+    text-align: center; /* Centra horizontalmente el texto */
+    display: flex; /* Flexbox para organizar contenido */
+    flex-wrap: wrap; /* Permite que los enlaces se ajusten en varias líneas si es necesario */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    gap: 20px; /* Espacio entre enlaces del pie de página */
+    font-size: 14px; /* Tamaño de fuente en el pie de página */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Ajusta el cálculo del ancho */
+}
+
+/* Estilo para los enlaces del footer */
+footer a {
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Texto blanco */
+    transition: color 0.3s ease; /* Transición suave del color al interactuar */
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+footer a:hover {
+    color: #bbbbbb; /* Cambio de color al pasar el cursor */
+}
+
+/* Reglas responsivas para diferentes tamaños de pantalla */
+@media (max-width: 768px) { /* Para tablets y dispositivos móviles */
+    footer {
+        font-size: 12px; /* Reduce el tamaño del texto en dispositivos más pequeños */
+        gap: 15px; /* Reduce el espaciado entre enlaces */
+        padding: 10px 15px; /* Ajusta el espaciado interno */
+    }
+}
+
+@media (max-width: 480px) { /* Para dispositivos móviles pequeños */
+    footer {
+        flex-direction: column; /* Cambia la dirección a columna para un mejor ajuste en pantalla pequeña */
+        gap: 10px; /* Reduce el espaciado entre elementos */
+    }
+}

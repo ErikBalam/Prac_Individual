@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<!-- Declaración del tipo de documento, indicando que es HTML5 -->
+<html lang="es">
+<!-- Etiqueta principal que indica el inicio del documento HTML con el idioma español -->
+
+<head>
+    <!-- Sección de la cabecera donde se incluyen metadatos y enlaces externos -->
+    <meta charset="UTF-8">
+    <!-- Establece la codificación de caracteres como UTF-8 para admitir caracteres especiales -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Garantiza la compatibilidad con versiones anteriores de Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la ventana gráfica para adaptarse al ancho del dispositivo, asegurando la compatibilidad móvil -->
+    <title>Google Clone</title>
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Enlace al archivo CSS externo para estilos -->
+</head>
+
+<body>
+    <!-- Cuerpo principal del documento -->
+
+    <!-- Header -->
+    <header>
+        <!-- Encabezado de la página, donde se encuentra la barra de navegación -->
+        <nav>
+            <!-- Barra de navegación -->
+            <ul class="nav-right-section">
+                <!-- Lista no ordenada para enlaces de navegación -->
+                <li><a href="https://mail.google.com/">Gmail</a></li>
+                <!-- Enlace a Gmail -->
+                <li>
+                    <a href="https://www.google.com/search?q=im%C3%A1genes&sca_esv=77c72257878c30ef&rlz=1C1UEAD_esMX1079MX1079&udm=2&biw=1536&bih=730&sxsrf=ADLYWIIL5Rd8m8Nwxf0l5cV9HfKBHuMqbA%3A1732037380879&ei=BMs8Z_GrNdzcwN4PkoTQ8Qc&ved=0ahUKEwjxvcyG9uiJAxVcLtAFHRICNH4Q4dUDCBA&uact=5&oq=im%C3%A1genes&gs_lp=EgNpbWciCWltw6FnZW5lczINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIKEAAYgAQYQxiKBUii3AFQsc4BWJnVAXABeACQAQCYAcMNoAGoEKoBBzAuMi44LTG4AQPIAQD4AQGYAgSgAsEQwgIEECMYJ8ICBhAAGAcYHpgDAIgGAZIHBzEuMi43LTGgB4cV&sclient=img5">
+                        Imágenes</a>
+                </li>
+                <!-- Enlace a la búsqueda de Imágenes de Google -->
+                <li class="menu-icon"><a href=""></a></li>
+                <!-- Ícono del menú (actualmente vacío) -->
+                <li>
+                    <a href="#">
+                        <div class="profile-icon">
+                            <!-- Icono de perfil con una imagen -->
+                            <img src="C:\Users\Jose\Documents\p1-google clone\img\WhatsApp Image 2024-11-19 at 6.18.00 PM.jpeg" alt="Perfil">
+                            <!-- Imagen de perfil con una descripción alternativa -->
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Sección principal del contenido -->
+
+        <!-- Logo Section -->
+        <section class="main-logo">
+            <!-- Sección que muestra el logo principal -->
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+            <!-- Logo de Google con una descripción alternativa -->
+        </section>
+
+        <!-- Search Bar Section -->
+        <section class="main-input">
+            <!-- Sección para la barra de búsqueda -->
+            <div class="main-input-container">
+                <!-- Contenedor para la barra de búsqueda e íconos relacionados -->
+                <span class="search-icon"></span>
+                <!-- Ícono de búsqueda (actualmente vacío, se usa CSS para mostrarlo) -->
+                <input class="search-google" type="text" placeholder="Buscar en Google o escribir URL">
+                <!-- Campo de entrada de texto para la búsqueda en Google o una URL -->
+
+                <!-- Ícono de Micrófono -->
+                <a class="micro-icon" href="#">
+                    <!-- Enlace para el ícono de micrófono -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#5f6368">
+                        <!-- SVG para mostrar un ícono de micrófono -->
+                        <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3s-3 1.34-3 3v6c0 1.66 1.34 3 3 3zm4.3-3c0 2.54-2.46 4.3-4.3 4.3s-4.3-1.76-4.3-4.3H6c0 3.01 2.14 5.44 5 5.92V21h2v-2.08c2.86-.48 5-2.91 5-5.92h-2.7z"></path>
+                        <!-- Definición del trazado del ícono -->
+                    </svg>
+                </a>
+
+                <!-- Ícono de Cámara -->
+                <a class="camera-icon" href="#">
+                    <!-- Enlace para el ícono de cámara -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#5f6368">
+                        <!-- SVG para mostrar un ícono de cámara -->
+                        <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
+                        <!-- Definición del trazado del ícono -->
+                        <circle cx="12" cy="13" r="2.5"></circle>
+                        <!-- Definición de un círculo en el centro del ícono -->
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Buttons Section -->
+        <section class="main-buttons">
+            <!-- Sección para los botones debajo de la barra de búsqueda -->
+            <div>
+                <button class="button-link"><a href="">Buscar con Google</a></button>
+                <!-- Botón con enlace a "Buscar con Google" -->
+            </div>
+            <div>
+                <button class="button-link"><a href="">logre hacerlo igual</a></button>
+                <!-- Botón con enlace a "logre hacerlo igual" -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Pie de página con enlaces adicionales -->
+        <a href="#">Sobre Google</a>
+        <!-- Enlace a información sobre Google -->
+        <a href="#">Publicidad</a>
+        <!-- Enlace a información sobre Publicidad -->
+        <a href="#">Negocios</a>
+        <!-- Enlace a información sobre Negocios -->
+        <a href="#">Cómo funciona la Búsqueda</a>
+        <!-- Enlace a información sobre cómo funciona la búsqueda -->
+        <a href="#">Privacidad</a>
+        <!-- Enlace a la política de privacidad -->
+        <a href="#">Condiciones</a>
+        <!-- Enlace a las condiciones de uso -->
+        <a href="#">Configuración</a>
+        <!-- Enlace a la configuración -->
+    </footer>    
+</body>
+</html>
